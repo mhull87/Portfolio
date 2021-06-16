@@ -1,0 +1,53 @@
+body {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: .35rem;
+    border-radius: 10px;
+}
+
+header {
+    margin-top: 1rem;
+    font-family: 'Dr Sugiyama', cursive;
+    font-size: 25px;
+}
+
+img {
+    width: 125px;
+    margin: .2rem;
+    box-shadow: 0 8px 10px 0 lightgray;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    border-bottom: 1.5px solid lightgray;
+}
+
+footer {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    color:white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+}

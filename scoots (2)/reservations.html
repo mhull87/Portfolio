@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="~Scoots make a reservation">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Passero+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>~Scoots | Reservations</title>
+</head>
+
+<body>
+    <header>
+        <div class="titlelogo">
+            <div class="title">
+                <h1>~Scoots</h1>
+                <p>Adventure Begins Here</p>
+            </div>
+            <a href="index.html"><img src="images/logo.png" alt="Scooter logo"></a>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primarynav" class="hide">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="rentals.html"><i class="fas fa-truck-monster"></i> Rentals</a></li>
+                <li class="active"><a href="reservations.html"><i class="fas fa-dollar-sign"></i> Reservations</a></li>
+                <li><a href="tours.html"><i class="fas fa-map"></i> Tours</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+            </ul>
+
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="facebook link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/" target="_blank" rel="noreferrer" aria-label="twitter link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="instagram link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <main>
+            <h2>Rental Reservations</h2>
+
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label>Full Name*<input type="text" name="name" required></label>
+                    <label>Home State or Country<input type="text" name="state or country"></label>
+                    <label>Cruse Line (if applicable)<input type="text" name="cruseline"></label>
+                    <label>Phone Number<input type="tel" name="tel"></label>
+                    <label>Email*<input type="email" name="email" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rental Information</legend>
+                    <label>Type*<input type="text" list="rentaltype" placeholder="Choose an option" required>
+                        <datalist id="rentaltype">
+                            <option value="~Honda Metro Scooter"></option>
+                            <option value="~Honda Dio Scooter"></option>
+                            <option value="~Honda PCX150 Scooter"></option>
+                            <option value="Honda Pioneer ATV"></option>
+                            <option value="Jeep Wrangler - 2 door"></option>
+                            <option value="Jeep Wrangler - 4 door with a/c"></option>
+                        </datalist>
+                    </label>
+                    <label>Date*<input type="date" name="date" required></label>
+                    <label>Number of days*<input type="number" name="numberofdays" min="1" required></label>
+                    <div class="radio">
+                        <label><input type="radio" name="fullorhalfday" value="Full Day" checked>Full
+                            day</label>
+                        <label><input type="radio" name="fullorhalfday" value="Half Day">Half day</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special Accomidations</legend>
+                    <label>Do you need a drop off?<br>Enter the drop off location.<textarea
+                            name="dropoff"></textarea></label>
+                    <label>Comments<textarea name="comments"></textarea></label>
+                </fieldset>
+
+                <button type="submit" name="submit">Rent Now</button>
+            </form>
+
+            <h2>Rental Agreement</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+            </ul>
+
+
+        </main>
+
+    </div>
+    <footer>
+        <span>&copy; <span id="year"></span> | Melissa Hull | ~Scoots |</span>
+        <span id="date"></span>
+    </footer>
+    <script src="https://kit.fontawesome.com/297bb17cc0.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
