@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Quiz</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Sigmar+One&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Welcome to Multi Quiz</h1>
+  <div class="curtain hidden" id="curtain">
+    <div class="curtain-wrapper">
+      <input type="checkbox" checked>
+
+      <div class="curtain-panel curtain-panel-left">
+        <h2>Click to reveal&nbsp;</h2>
+      </div>
+
+      <div class="curtain-content">
+        <div id='scorediv' class="score hidden">
+          <div class="scoretext">Score:&nbsp;
+            <div id="score"></div>
+            &nbsp;/&nbsp;10
+          </div>
+        </div>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/trophy.svg" alt="You won a trophy!">
+        <p class='attribution'>"Icon made by Freepik from <a href='www.flaticon.com'>www.flaticon.com"</a></p>
+        <h2 id="endphrase">Achievement Unlocked!</h2>
+        <button class="btn hidden highscore" id="highscore">High Scores</button>
+        <button class='btn hidden playagain' id='playagain'>Try Again</button>
+      </div>
+
+      <div class="curtain-panel curtain-panel-right">
+        <h2>your score...</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden highscorediv" id="highscorediv">
+    <h2>High Scores:</h2>
+    <div class='highscorelistdiv' id="highscorelistdiv">
+      <ol id='highscorelist'>
+
+      </ol>
+      <button class="btn playagain" id="playagain2">Try Again</button>
+    </div>
+  </div>
+
+  <div id="maincontainer">
+    <div id="timer" class="timer hidden">10</div>
+    <div id="progress_container" class="hidden">
+      <h3 id="progress_question" class="hidden">Question</h3>
+      <div id="progress_bar" class="hidden">
+        <div id="progress_bar_full"></div>
+      </div>
+      <div id="progress_counter"></div>
+    </div>
+
+    <div id="difficulty">
+      <h2>Choose your difficulty:</h2>
+      <a class="btn" id="easy">Easy</a>
+      <a class="btn" id="medium">Medium</a>
+      <a class="btn" id="hard">Hard</a>
+    </div>
+
+    <div id='question' class="hidden">
+      <div class="question-grid">
+        <div id="questionDiv"></div>
+        <div class="answerDiv">
+          <p class="choiceNumber" id="choiceein"><b>1.</b></p>
+          <p class="choice" id="choice1">is it this one</p>
+        </div>
+        <div class="answerDiv">
+          <p class="choiceNumber" id="choicezwei"><b>2.</b></p>
+          <p class="choice" id="choice2">is it this one</p>
+        </div>
+        <div class="answerDiv">
+          <p class="choiceNumber" id="choicedri"><b>3.</b></p>
+          <p class="choice" id="choice3">is it this one</p>
+        </div>
+        <div class="answerDiv">
+          <p class="choiceNumber" id="choicevier"><b>4.</b></p>
+          <p class="choice" id='choice4'>is it this one</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="btndiv">
+      <a class="btn" id="next">Next</a>
+    </div>
+  </div>
+  <script type='module' src="js/main.js"></script>
+</body>
+
+</html>

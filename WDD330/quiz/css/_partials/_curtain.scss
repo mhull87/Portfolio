@@ -1,0 +1,96 @@
+// Change the four translateX to translate Y to make the curtains split up and down
+
+body {
+  margin: auto; // added to take the black edge away
+  overflow-x: hidden; // added to hide the scroll bars
+}
+
+.curtain {
+  height: 100vh;
+  width: 100%;
+
+  &-wrapper {
+    height: 100%;
+    width: 100%;
+
+    input[type='checkbox'] {
+      cursor: pointer;
+      height: 70%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 4;
+
+      // When the checkbox is checked...
+      &:checked {
+
+        // Slide the first panel
+        &~div.curtain-panel-left {
+          transform: translateX(0);
+        }
+
+        // Slide the second panel
+        &~div.curtain-panel-right {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  &-panel {
+    align-items: center;
+    background: $panel-color;
+    color: $text;
+    display: flex;
+    float: left;
+    height: 100vh;
+    position: relative;
+    transition: 1s ease-out;
+    width: 50%;
+    z-index: 3;
+
+    &-left {
+      justify-content: flex-end;
+      transform: translateX(-100%);
+    }
+
+    &-right {
+      justify-content: flex-start;
+      transform: translateX(100%);
+    }
+  }
+
+  &-content {
+    align-items: center;
+    background: $content-background;
+    color: $text;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 900px;
+    padding-top: 5rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+
+    img {
+      width: 20%;
+    }
+  }
+}
+
+.attribution {
+  font-size: .4rem;
+}
+
+.playagain {
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.highscore {
+  z-index: 2;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Notes</title>
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Staatliches&display=swap" rel="stylesheet">
+  
+</head>
+<body class="displaydots">
+  <h1>Week 4 Notes</h1>
+  <h2><u>Javascript: Novice to Ninja</u> Ch 8 Forms</h2>
+<ul>
+  <li>access form elements with document.forms[]; more examples in code</li> 
+  <li>form.submit(); submits automatically, button with type of submit or image can submit a form too</li>
+  <li>form.resert(); or button with type reset</li>
+  <li>form.action = '/an/other.url' submits the form to a different url to be processed</li>
+  <li>add event listeners for focus and blur to set back text and take it away when they start typing<br> placeholder attribute is better</li>
+  <li>Form Controls
+    <ul>
+      <li>input
+        <ul>
+          <li>text input fields</li>
+          <li>password input fields *see code hero</li>
+          <li>checkbox input fields *see code hero</li>
+          <li>radio button input fields *see code hero</li>
+          <li>hidden input fileds</li>
+          <li>file input fields</li>
+          <li>lots of others number tel color date email etc.</li>
+        </ul>
+      </li>
+      <li>select drop-down list - use multiple attribute to select multiple items</li>
+      <li>textarea</li>
+      <li>button</li>
+      <li>menu - is not well supported, used to creat a dropdown menu</li>
+    </ul>
+  </li>
+  <li>Form Validation
+    <ul>
+      <li>use both client side and server side Validation</li>
+      <li>required attribute *see code hero</li>
+      <li>add eventlistener directly to the input field to provide instant feedback *see code hero</li>
+      <li>disable the submit button if there are errors on the form *see code hero</li>
+    </ul>
+  </li>
+</ul>
+
+  <h2><u>Javascript: Novice to Ninja</u> Ch 12 OOP</h2>
+<ul>
+  <li>Encapsulation
+    <ul>
+      <li>the inner workings are kept hidden inside the object and only essential functionalities are exposed to the end user</li>
+    </ul>
+  </li>
+  <li>Polymorphism
+    <ul>
+      <li>the same process can be used for different objects (objects can share the same method and then override to more specific implementation)</li>
+    </ul>
+  </li>
+  <li>Inharitance
+    <ul>
+      <li>taking the features of one object and adding some new features (take an objectthat already exists and inherit all its properties and methods)</li>
+    </ul>
+  </li>
+  <li>constructors use the this keyword</li>
+  <li>then instanciate the object with a new object</li>
+  <li>built in objects
+    <ul>
+      <li>Object</li>
+      <li>Array</li>
+      <li>Function</li>
+    </ul>
+  </li>
+  <li>class declaration
+    <ul>
+      <li>class Dice {<br>
+        constructor(sides=6) {<br>
+        this.sides = sides;<br>
+        }<br>
+        roll() {<br>
+        return Math.floor(this.sides * Math.random() + 1)<br>
+        }<br>
+        }</li>
+        <li>instance:</li>
+        <li>const blueDice = new Dice(20);</li>
+    </ul>
+  </li>
+  <li>static methods are only available within the class not instances of the class</li>
+  <li>use .prototype to add properties and methods</li>
+  <li>find the prototype with Object.getPrototypeOf(raph);</li>
+  <li>prototype is live and shared by all instances of the class overriding prevoiusly declared properties</li>
+  <li>override prototype by assigning it another properity (own properities take presidence over prototype properties</li>
+  <li>use extends and super<br>
+    class NinjaTurtle extends Turtle {<br>
+  constructor(name) {<br>
+  super(name);<br>
+this.weapon = 'hands';<br>
+  }<br>
+attack() { return `Feel the power of my ${this.weapon}!` }<br>
+  }</li>
+  <li>add delete as a function to the Array object
+    <ul>
+      <li>Array.prototype.delete = function(i) {<br>
+        return self.splice(i,1);<br>
+        }</li>
+    </ul>
+  </li>
+  <li>Object has a .create that copies the object without making a class</li>
+</ul>
+
+  <h2><u>Javascript: Novice to Ninja</u> Ch 15 Modern Javascript => Modular JS Section</h2>
+
+
+  <h2>Questions</h2>
+  <ul>
+    <li>Is it proper to use patterns to validate forms in the html first and then use validation in JS?</li>
+  </ul>
+
+    <div class="btn"><a href="index.html"><button>Back to Week 4</button></a></div>
+</body>
+</html>

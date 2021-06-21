@@ -1,0 +1,71 @@
+.container {
+  max-width: 500px;
+  border: 1px solid black;
+  margin: auto;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+}
+
+.add-todo-wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.todo {
+  width: 300px;
+  border: 1px solid black;
+  margin: 5px auto;
+}
+
+.todo-filters {
+  text-align: center;
+}
+
+.complete-btn {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  font-family: 'Bowlby One SC', cursive;
+}
+
+.todo-content {
+  font-family: 'Gloria Hallelujah', cursive;
+  display: inline;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.todo-delete-btn {
+  float: right;
+  background-color: rgb(255, 92, 92);
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+#addBtn {
+  background-color: lightseagreen;
+  color: aliceblue;
+  padding: 5px;
+  font-family: 'Bowlby One SC', cursive;
+}
+
+.strike {
+  text-decoration: line-through;
+  opacity: 20%;
+}
+
+.check:before {
+  content: '\2713';
+}
+
+button {
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: rgba(255, 230, 0, 0.205);
+  margin-top: 1rem;
+}
