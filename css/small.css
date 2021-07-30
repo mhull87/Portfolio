@@ -35,9 +35,15 @@ h2 {
 }
 
 a {
-    background-color: lightskyblue;
-    padding: 1rem;
+    background-color: darkorchid;
+    padding: .5rem;
     border-radius: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+a:active, a:visited {
+    color: white;
 }
 
 footer {
