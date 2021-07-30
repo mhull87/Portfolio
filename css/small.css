@@ -34,6 +34,12 @@ h2 {
     border-bottom: 1.5px solid lightgray;
 }
 
+a {
+    background-color: lightskyblue;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
 footer {
     font-size: 1rem;
     padding-top: 1rem;
@@ -45,9 +51,5 @@ footer p {
 }
 
 footer a {
-    color: white;
-}
-
-footer a:visited {
     color: white;
 }
