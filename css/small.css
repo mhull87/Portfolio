@@ -35,14 +35,13 @@ h2 {
 }
 
 a {
-    background-color:  hotpink;
+    background-color: #500047;
     padding: .5rem;
     border-radius: 10px;
     text-decoration: none;
     display: block;
     color: white;
-    width: 50%;
-    text-align: center;
+    width: 30%;
 }
 
 a:active, a:visited {
