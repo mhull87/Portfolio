@@ -1,11 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\css",
     "\\js",
     "\\WDD330",
     "\\WDD330\\js",
+    "\\WDD330\\quiz",
     "\\WDD330\\week9"
   ],
-  "SelectedNode": "\\js\\main.js",
+  "SelectedNode": "\\css\\small.css",
   "PreviewInSolutionExplorer": false
 }
