@@ -8,7 +8,7 @@ body {
 header,
 footer {
     background-color: #20cd59;    
-    border: 3px double #5e1b59;
+    border: 20px double #5e1b59;
     color: white;
     text-align: center;
     padding: .35rem;
@@ -42,7 +42,7 @@ li {
 a {
     background-color: #5e1b59;
     padding: .5rem;
-    border: 3px double #20cd59;
+    border: 20px double #20cd59;
     border-radius: 10px;
     text-decoration: none;
     display: block;
@@ -50,7 +50,7 @@ a {
     width: 30%;
     text-align: center;
     margin: .5rem 0;
-    font-size: .5rem;
+    font-size: 1rem;
     font-family: 'Rock Salt', cursive;
 }
 
