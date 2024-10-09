@@ -8,11 +8,11 @@ body {
 header,
 footer {
     background-color: #20cd59;    
-    border: 20px double #5e1b59;
+    /*border: 20px double #5e1b59;*/
     color: white;
     text-align: center;
     padding: .35rem;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 
 header {
@@ -37,13 +37,14 @@ h2 {
 
 li {
     margin: .5rem 0;
+    list-style: circle;
 }
 
 a {
     background-color: #5e1b59;
     padding: .5rem;
-    border: 20px double #20cd59;
-    border-radius: 10px;
+    /*border: 5px solid #20cd59;
+    border-radius: 10px;*/
     text-decoration: none;
     display: block;
     color: white;
